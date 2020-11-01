@@ -216,7 +216,7 @@ html {
   left: 62%;
   padding: 2rem;
   display: none;
-  border-radius: 0.`rem;
+  border-radius: 0.1rem;
   transform: translateX(-50%);
 }
 
