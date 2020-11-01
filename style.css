@@ -1,0 +1,335 @@
+/* TABLE OF CONTENTS */
+
+/* =====================
+1. Global Styles
+2. Reused css components
+3. 
+4. 
+5. 
+6. 
+7. 
+====================== */
+
+/* =======================
+1. GLOBAL STYLES
+=========================*/
+
+:root {
+  --clr-grey: #aca8a2;
+  --clr-darkgrey: #3d3b3b;
+  --clr-white: #ffffff;
+  --clr-orange: #eb9019;
+  --ff-primary: 'David Libre', serif;
+  --transition: all 0.3s linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  color: var(--clr-darkgrey);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* =======================
+2. RE-USED CSS COMPONENTS
+=========================*/
+
+.section-title {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.section-title h2:after {
+  display: block;
+  content: '';
+  height: 0.2rem;
+  width: 3rem;
+  background-color: var(--clr-darkgrey);
+  margin: 1rem auto 2rem auto;
+  border-radius: 25%;
+}
+
+.btn {
+  padding: 0.75rem;
+  border: 1px solid var(--clr-white);
+  background-color: transparent;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-size: 100%;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-darkgrey);
+  cursor: pointer;
+}
+
+.clear:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* =======================
+3. HEADER
+=========================*/
+
+.header-message {
+  text-align: center;
+  background-color: #0e0e3d;
+  padding: 0.4rem;
+  text-transform: uppercase;
+}
+
+.header-message a,
+.header-message h3 {
+  display: inline-block;
+  color: var(--clr-grey);
+}
+
+.header-message h3 {
+  margin: 0 8rem;
+  font-weight: 300;
+  word-spacing: 0.1rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+  word-spacing: 0.05rem;
+}
+
+.header-img {
+  height: 90vh;
+  background-image: linear-gradient(#00000054, #00000054), url(./img/cover.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.nav-bar {
+  padding: 1.5rem;
+}
+
+.nav-bar h2 {
+  display: inline-block;
+  color: var(--clr-darkgrey);
+  margin-left: 10%;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.nav-bar ul {
+  float: right;
+}
+
+.nav-bar-links li {
+  display: inline-block;
+  margin-top: 0.3rem;
+}
+
+.nav-bar-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 2rem;
+  color: var(--clr-darkgrey);
+  letter-spacing: 0.05rem;
+  transition: var(--transition);
+  padding-bottom: 2rem;
+}
+
+.nav-bar-links:last-child {
+  margin-right: 5%;
+}
+
+.nav-bar-links a:hover {
+  color: var(--clr-orange);
+}
+
+.header-img {
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-text h1 {
+  font-weight: 300;
+  font-size: 300%;
+  color: var(--clr-white);
+}
+
+.header-btn {
+  margin-left: 7rem;
+  margin-top: 1rem;
+}
+
+.arrow {
+  color: var(--clr-white);
+  font-size: 1.7rem;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  top: 90%;
+}
+
+/* .submenu:before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  border-left: 15px solid red;
+  border-right: 15px solid red;
+  border-bottom: 15px solid green;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.submenu {
+  background-color: var(--clr-white);
+  position: absolute;
+  top: 6rem;
+  left: 62%;
+  padding: 2rem;
+  display: none;
+  border-radius: 0.`rem;
+  transform: translateX(-50%);
+}
+
+.show {
+  display: block;
+}
+
+.submenu-link {
+  display: block;
+  margin: 0.75rem 0;
+  color: var(--clr-darkgrey);
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.submenu-link:hover {
+  color: var(--clr-orange);
+}
+
+/* =======================
+3. FEATURED
+=========================*/
+.featured {
+  padding-bottom: 5rem;
+}
+
+.featured-pics-container {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-pics-container:after {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-pic {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.feature-price {
+  margin-top: 0.75rem;
+}
+.feature-price span {
+  font-size: 1.25rem;
+  color: var(--clr-orange);
+}
+
+/* =======================
+3. MIDDLE BANNER
+=========================*/
+
+.middle-banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.banner-container1 {
+  background-image: linear-gradient(#00000025, #00000025),
+    url(./img/banner1.jpg);
+}
+
+.banner-container2 {
+  background-image: linear-gradient(#0000003d, #0000003d),
+    url(./img/banner2.jpg);
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+  transition: all 1.5s ease-in-out;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+}
+
+.banner-text {
+  text-align: center;
+  color: var(--clr-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding-top: 10rem;
+}
+
+.banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.banner-text p {
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+.banner-left,
+.banner-right {
+  color: var(--clr-white);
+  font-size: 3rem;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  cursor: pointer;
+}
+
+.banner-left {
+  left: 2rem;
+}
+
+.banner-right {
+  right: 2rem;
+}
