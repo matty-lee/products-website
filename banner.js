@@ -7,20 +7,25 @@ banners.forEach((banner, index) => {
 });
 
 let counter = 0;
+const autoScroll = function () {
+  counter++;
+  scroll();
+};
 
-// setInterval(() => {
-//   counter++;
-//   scroll();
-// }, 5000);
+let interval = setInterval(autoScroll, 8000);
 
 left.addEventListener('click', () => {
+  clearInterval(interval);
   counter--;
   scroll();
+  interval = setInterval(autoScroll, 8000);
 });
 
 right.addEventListener('click', () => {
+  clearInterval(interval);
   counter++;
   scroll();
+  interval = setInterval(autoScroll, 8000);
 });
 
 function scroll() {
@@ -30,6 +35,6 @@ function scroll() {
     counter = banners.length - 1;
   }
   banners.forEach(function (banner) {
-    banner.style.transform = `translate(-${counter * 100}%)`;
+    banner.style.transform = `translateX(-${counter * 100}%)`;
   });
 }
