@@ -3,9 +3,9 @@
 /* =====================
 1. Global Styles
 2. Reused css components
-3. 
-4. 
-5. 
+3. Header
+4. Featured
+5. Middle Banner
 6. 
 7. 
 ====================== */
@@ -332,4 +332,38 @@ html {
 
 .banner-right {
   right: 2rem;
+}
+
+/* =======================
+3. MIDDLE BANNER
+=========================*/
+
+.gear-square {
+  background-image: url(./img/collar.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  margin: auto;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.gear-square a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  margin: 2rem;
+
+}
+
+.gear-square a h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--clr-white);
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
 }

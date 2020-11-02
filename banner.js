@@ -19,6 +19,7 @@ left.addEventListener('click', () => {
   counter--;
   scroll();
   interval = setInterval(autoScroll, 8000);
+  console.log(counter);
 });
 
 right.addEventListener('click', () => {
