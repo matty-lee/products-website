@@ -335,7 +335,7 @@ html {
 }
 
 /* =======================
-3. MIDDLE BANNER
+3. PET GEAR
 =========================*/
 
 .gear-square {
@@ -346,23 +346,7 @@ html {
   cursor: pointer;
   text-align: center;
   overflow: hidden;
-  transition: all 2s linear;
-
-}
-
-.gear-1 {
-  background-image: linear-gradient(#00000049, #00000049), url(./img/collar.jpg);
-}
-.gear-2 {
-  background-image: linear-gradient(#00000049, #00000049), url(./img/leash.jpg);
-}
-.gear-3 {
-  background-image: linear-gradient(#00000049, #00000049),
-    url(./img/bandana.jpg);
-}
-.gear-4 {
-  background-image: linear-gradient(#00000049, #00000049),
-    url(./img/bow-tie.jpg);
+  background-color: black;
 }
 
 .gear-square a {
@@ -373,7 +357,16 @@ html {
   text-decoration: none;
 }
 
-.gear-square:hover {
+.gear-square img {
+  width: 100%;
+  height: 100%;
+  transition: all 1s linear;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.7;
+}
+
+.gear-square img:hover {
   transform: scale(1.05);
 }
 
