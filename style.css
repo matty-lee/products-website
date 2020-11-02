@@ -38,7 +38,7 @@ html {
   font-family: var(--ff-primary);
   font-size: 1rem;
   font-weight: 300;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
 }
 
