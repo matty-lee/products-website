@@ -339,14 +339,30 @@ html {
 =========================*/
 
 .gear-square {
-  background-image: url(./img/collar.jpg);
   background-size: cover;
   background-position: center;
-  height: 20rem;
-  margin: auto;
+  height: 18rem;
   position: relative;
   cursor: pointer;
   text-align: center;
+  overflow: hidden;
+  transition: all 2s linear;
+
+}
+
+.gear-1 {
+  background-image: linear-gradient(#00000049, #00000049), url(./img/collar.jpg);
+}
+.gear-2 {
+  background-image: linear-gradient(#00000049, #00000049), url(./img/leash.jpg);
+}
+.gear-3 {
+  background-image: linear-gradient(#00000049, #00000049),
+    url(./img/bandana.jpg);
+}
+.gear-4 {
+  background-image: linear-gradient(#00000049, #00000049),
+    url(./img/bow-tie.jpg);
 }
 
 .gear-square a {
@@ -355,8 +371,10 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
-  margin: 2rem;
+}
 
+.gear-square:hover {
+  transform: scale(1.05);
 }
 
 .gear-square a h2 {
