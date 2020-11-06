@@ -108,8 +108,19 @@ html {
   color: var(--clr-grey);
 }
 
+.header-message a{
+  position: absolute;
+}
+
+.header-message a:first-child{
+  right:90%;
+}
+.header-message a:last-child{
+  left: 90%;
+}
+
 .header-message h3 {
-  margin: 0 8rem;
+  margin: 0 12%;
   font-weight: 300;
   word-spacing: 0.1rem;
   font-size: 0.95rem;
