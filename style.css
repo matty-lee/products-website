@@ -108,14 +108,14 @@ html {
   color: var(--clr-grey);
 }
 
-.header-message a{
+.header-message a {
   position: absolute;
 }
 
-.header-message a:first-child{
-  right:90%;
+.header-message a:first-child {
+  right: 90%;
 }
-.header-message a:last-child{
+.header-message a:last-child {
   left: 90%;
 }
 
@@ -138,18 +138,36 @@ html {
 
 .nav-bar {
   padding: 1.5rem;
+  text-align: center;
+  position: relative;
 }
 
 .nav-bar h2 {
   display: inline-block;
   color: var(--clr-darkgrey);
-  margin-left: 10%;
   text-transform: uppercase;
   font-weight: 300;
+  background-color: yellow;
+}
+
+.nav-bar-icon {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--clr-darkgrey);
+  position: absolute;
+}
+
+.cart {
+  left: 3%;
+}
+
+.bars {
+  right: 3%;
 }
 
 .nav-bar ul {
   float: right;
+  background-color: pink;
 }
 
 .nav-bar-links li {
@@ -173,6 +191,16 @@ html {
 
 .nav-bar-links a:hover {
   color: var(--clr-orange);
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-bar-links {
+    display: none;
+  }
+
+  .nav-bar-icon {
+    display: inline-block;
+  }
 }
 
 .header-img {
