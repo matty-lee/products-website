@@ -6,8 +6,9 @@
 3. Header
 4. Featured
 5. Middle Banner
-6. 
-7. 
+6. Pet Gear
+7. Karma
+8. Better Earth
 ====================== */
 
 /* =======================
@@ -147,7 +148,6 @@ html {
   color: var(--clr-darkgrey);
   text-transform: uppercase;
   font-weight: 300;
-  background-color: yellow;
 }
 
 .nav-bar-icon {
@@ -167,7 +167,6 @@ html {
 
 .nav-bar ul {
   float: right;
-  background-color: pink;
 }
 
 .nav-bar-links li {
@@ -212,6 +211,7 @@ html {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 26rem;
 }
 
 .header-text h1 {
@@ -277,7 +277,7 @@ html {
 }
 
 /* =======================
-3. FEATURED
+4. FEATURED
 =========================*/
 .featured {
   padding-bottom: 5rem;
@@ -307,7 +307,7 @@ html {
 }
 
 /* =======================
-3. MIDDLE BANNER
+5. MIDDLE BANNER
 =========================*/
 
 .middle-banner {
@@ -341,7 +341,12 @@ html {
   color: var(--clr-white);
   vertical-align: middle;
   text-transform: uppercase;
-  padding-top: 10rem;
+  /* padding-top: 10rem; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
 }
 
 .banner-text h2 {
@@ -355,6 +360,16 @@ html {
   text-transform: none;
 }
 
+@media screen and (max-width: 600px) {
+  .banner-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+}
+
 .banner-left,
 .banner-right {
   color: var(--clr-white);
@@ -366,15 +381,15 @@ html {
 }
 
 .banner-left {
-  left: 2rem;
+  left: 1rem;
 }
 
 .banner-right {
-  right: 2rem;
+  right: 1rem;
 }
 
 /* =======================
-3. PET GEAR
+6. PET GEAR
 =========================*/
 
 .gear-square {
@@ -411,4 +426,67 @@ html {
   font-size: 2rem;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+/* =======================
+7. KARMA
+=========================*/
+
+.karma-section {
+  background-color: #80808010;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.karma-container {
+  text-align: center;
+}
+
+.karma-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.karma-title {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.karma-container p {
+  line-height: 22px;
+}
+
+/* =======================
+8. BETTER EARTH
+=========================*/
+
+.better-earth {
+  height: 50vh;
+  background-image: linear-gradient(#00000028, #00000028), url(./img/better-earth.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.earth-container {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+.earth-container h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+
+.earth-container p {
+  margin: 2rem auto;
+  font-size: 1.4rem;
 }

@@ -12,13 +12,13 @@ const autoScroll = function () {
   scroll();
 };
 
-let interval = setInterval(autoScroll, 8000);
+let interval = setInterval(autoScroll, 10000);
 
 left.addEventListener('click', () => {
   clearInterval(interval);
   counter--;
   scroll();
-  interval = setInterval(autoScroll, 8000);
+  interval = setInterval(autoScroll, 10000);
   console.log(counter);
 });
 
@@ -26,7 +26,7 @@ right.addEventListener('click', () => {
   clearInterval(interval);
   counter++;
   scroll();
-  interval = setInterval(autoScroll, 8000);
+  interval = setInterval(autoScroll, 10000);
 });
 
 function scroll() {
