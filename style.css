@@ -463,7 +463,8 @@ html {
 
 .better-earth {
   height: 50vh;
-  background-image: linear-gradient(#00000028, #00000028), url(./img/better-earth.jpg);
+  background-image: linear-gradient(#00000028, #00000028),
+    url(./img/better-earth.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -490,3 +491,67 @@ html {
   margin: 2rem auto;
   font-size: 1.4rem;
 }
+
+/* =======================
+9. FOOTER
+=========================*/
+
+.footer div .section-title {
+  margin-bottom: 6rem;
+}
+
+.footer-square {
+padding: 1rem;
+}
+
+.footer-title:after {
+  display: block;
+  content: '';
+  border-bottom: 1px solid black;
+  margin: 1rem 0.auto;
+}
+
+.footer-links li {
+  list-style: none;
+  margin: 10px auto;
+}
+.footer-links li a {
+  text-decoration: none;
+  color: var(--clr-darkgrey);
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom-half {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-row1 a{
+  text-decoration: none;
+  color: var(--clr-darkgrey);
+  margin: 1rem;
+  display: inline-block;
+  height: 0.75rem;
+}
+
+.footer-row2 a{
+  text-decoration: none;
+  color: var(--clr-darkgrey);
+  display: inline-block;
+  font-size: 2rem;
+  width: 2rem;
+  margin: 2rem;
+  transition: var(--transition);
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+.instagram:hover{
+  color: #f09433;;
+}
+
